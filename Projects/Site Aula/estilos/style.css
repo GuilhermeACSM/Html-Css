@@ -14,9 +14,19 @@
     --cor5:#000000;
 
 }
-
+/*-------------------Home-----------------------------*/
 body {
     background-color: var(--cor4);
+}
+
+.body-home {
+    background-image: url(../Imagens/Sede-Apple.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+
 }
 
 header {
@@ -108,8 +118,16 @@ main img.pequena {
     margin: auto;
 }
 
+.article-2 {
+    width: 100%;
+}
+
+.article-3 {
+    width: 100%;
+}
+
 .div-video {
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     margin: 0px -10px 10px -10px;
     padding-bottom: 56.5%;
     position: relative;
@@ -144,7 +162,7 @@ footer a:hover {
 }
 
 
-/*-----------------Forms--------------------*/
+/*-----------------Contato--------------------*/
 
 .main-2 {
     border-radius: 5px;
