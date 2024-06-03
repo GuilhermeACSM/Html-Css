@@ -118,12 +118,37 @@ main img.pequena {
     margin: auto;
 }
 
-.article-2 {
-    width: 100%;
+#imagem-paralax {
+    background-image: url(../Imagens/Steve-Jobs.png);
+    background-position: right ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.paragrafo-paralax {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: var(--cor1);
+    padding: 10px;
+    
 }
 
 .article-3 {
     width: 100%;
+}
+
+#imagem2-paralax {
+    background-image: url(../Imagens/Steve-jobs2.png);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.paragrafo2-paralax {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: var(--cor1);
+    padding: 10px;
 }
 
 .div-video {
