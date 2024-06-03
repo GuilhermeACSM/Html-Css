@@ -1,7 +1,7 @@
 @charset "UTF-8";
- 
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
- 
+
 @font-face {
     font-family: "Android";
     /*
@@ -10,8 +10,8 @@
     src: url('../fontes/idroid.otf') format(opentype);
     font-weight: normal;
 }
- 
- 
+
+
 :root {
     --cor0:#c5ebd6;
     --cor1:#83e1ad;
@@ -19,34 +19,34 @@
     --cor3:#2fa866;
     --cor4:#1a5c37;
     --cor5:#063d1e;
- 
+
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", sans-serif;
     --fontes-android: "Android", sans-serif;
 }
- 
+
 * {
     margin: 0px;
     padding: 0px;
 }
- 
+
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
- 
+
 a.externo::after {
     content: "\00A0\1F517";
- 
+
 }
- 
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
 }
- 
+
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
@@ -55,12 +55,12 @@ header > h1 {
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
- 
+
 /*
 (max-width) Para que o páragrafo do header fique contido naquela região e não quebre (max-width).
- 
+
 Já o (margin:auto) serve para ele ficar no meio e sempre se adaptar de acordo com o tamanho da tela.
- 
+
 (padding-left: 10px e padding-right: 10px) Servem para expremer o páragrafo quando a tela diminuir até o tamanho do (max-width).
 */
 header > p {
@@ -74,19 +74,19 @@ header > p {
     padding-right: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
- 
+
 nav {
     background-color: var(--cor5);
     padding: 10px;
     text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
     text-align: center;
 }
- 
+
 /*
 (Padding) Para espaçamento das palavras chaves dos links.
-   
+
 (font-weight:BOLD) Para deixar o texto em negrito.
- 
+
 (transition-duration) Serve para aumentar ou diminuir o tempo de transição do background dos links.
 */
 nav > a {
@@ -96,17 +96,17 @@ nav > a {
     font-weight: bold;
     transition-duration: 0.5s;
 }
- 
+
 /* (a:hover) Serve basicamente para quando a pessoa for em cima do link aparecer algo como por exemplo o background do link mudar. */
 nav > a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
     border-radius: 5px;
 }
- 
+
 /*
 (max-width e min-width) são para a responsividade do site para as imagens e texto do main margin auto para sempre ficar no meio.
- 
+
 O (border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;)
 serve basicamente para arredeondar as partes de baixo do main (se colocasse border-top-left-radius: 10px; border-top-right-radius: 10px;) ele iria arredondar a parte de cima do main.
 */
@@ -121,20 +121,20 @@ main {
     10px rgba(0, 0, 0, 0.418);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-   
+
 }
- 
+
 main h1 {
     color: var(--cor5);
     font-family: var(--fontes-android);
     font-weight: normal;
     font-size: 1.8em;
 }
- 
- 
+
+
 /*
 (Text-indent) Só para o espaçamento no ínicio do h2.
- 
+
 (background-image: linear-gradient(to right, var(--cor1), transparent)) Só para deixar o texto em um fundo gradiente do verde para um transparente.
 */
 main h2 {
@@ -145,7 +145,7 @@ main h2 {
     text-indent: 7px;
     font-weight: normal;
 }
- 
+
 /* Serve para mexer nos p do main */
 main p {
     margin: 15px 0px ;
@@ -154,13 +154,13 @@ main p {
     line-height: 2em;
     font-size: 1em;
 }
- 
+
 main strong {
     color: var(--cor4);
     font-weight: bold;
     padding: 2px 6px;
 }
- 
+
 main a {
     text-decoration: none;
     font-weight: bold;
@@ -168,20 +168,20 @@ main a {
     background-color: var(--cor2);
     padding: 2px 6px;
 }
- 
+
 main a:hover {
     text-decoration: underline;
     color: var(--cor4);
 }
- 
+
 main img {
     width: 100%;
 }
- 
+
 /*
 Imagem do bugdroid fica responsível:
 (display:block) para transformar a imagem em um bloco para depois poder centralizar ela no meio com a (margin:auto).
- 
+
 E o (width:350px) serve para diminuir o tamanho dela e não ficar gigante.
 */
 main img.pequena {
@@ -189,7 +189,7 @@ main img.pequena {
     display: block;
     margin: auto;
 }
- 
+
 /* Posicionamento relativo fará com que o que estiver dentro da div seja relativo ao que está absoluto*/
 div.video {
     background-color: var(--cor5);
@@ -198,7 +198,7 @@ div.video {
     padding-bottom: 56.5%;
     position: relative;
 }
- 
+
 /* Com o posicionamento absoluto você irá conseguir mexer no width e height dos video que pegar do youtube*/
 div.video > iframe {
     position: absolute;
@@ -206,16 +206,16 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
- 
+
 }
- 
+
 aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
- 
+
 /* Mudando o h3 do aside */
 aside > h3 {
     background-color: var(--cor4);
@@ -224,13 +224,13 @@ aside > h3 {
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
- 
+
 /* (list-style-type: "\2714\00A0\00A0")Serve para mudar o estilo da lista (as bolinhas que fica ao lado dos li). NÃO é compatível com todos os navegadores.  
- 
+
 (2714) Código de emoji do emojipedia.
- 
+
 (00A0) Código para dar espaçamento do emoji e das palavras (conhecido como NBSP)
- 
+
 (columns) Usado para separar a lista em duas colunas.
 */
 aside > ul {
@@ -238,7 +238,7 @@ aside > ul {
     list-style-position: inside;
     columns: 2;
 }
- 
+
 footer {
     background-color: #063d1e;
     color: white;
@@ -246,15 +246,15 @@ footer {
     font-size: 0.8em;
     padding: 5px;
 }
- 
+
 footer > p > a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
 }
- 
+
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
- 
+
 }
