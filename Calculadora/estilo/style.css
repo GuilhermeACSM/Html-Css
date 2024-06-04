@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 table{
     border-collapse: collapse;
+    box-shadow: 2px 3px 3px 2px black;
 }
 
 caption {
@@ -30,13 +31,8 @@ th,td{
 td {
     font-weight: bolder;
     text-align: center;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-}
-
-.numeros {
-    color: black;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: rgb(255, 255, 255);
 }
 
 .laranja {
