@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+}
+
+table{
+    border-collapse: collapse;
+    
+}
+
+caption {
+    font-weight: bolder;
+    background-color: rgb(194, 221, 195);
+    border: 1px solid black;
+}
+
+th {
+    text-align: end;
+    font-size: 50px;
+    background-color: rgb(194, 221, 195);
+    border-radius: 5px;
+}
+
+th,td{
+    border: 1px solid black;
+    width: 60px;
+    height: 110px;
+}
+
+td {
+    font-weight: bolder;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.numeros {
+    color: black;
+}
+
+.laranja {
+    background-color: orangered;
+}
