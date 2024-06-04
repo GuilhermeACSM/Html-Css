@@ -186,6 +186,42 @@ footer a:hover {
     padding: 5px;
 }
 
+/*---------------Dispositivos-----------------*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: var(--cor5);
+}
+
+th {
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    padding: 20px;
+}
+
+td {
+    height: 40px;
+    border-radius: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--cor2);
+}
+
+tr:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
 
 /*-----------------Contato--------------------*/
 
