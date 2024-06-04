@@ -20,7 +20,7 @@ body {
 }
 
 .body-home {
-    background-image: url(../Imagens/Sede-Apple.png);
+    background-image: url(../Imagens/papel-de-parede.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -138,8 +138,8 @@ main img.pequena {
 }
 
 #imagem2-paralax {
-    background-image: url(../Imagens/Steve-jobs2.png);
-    background-position: right center;
+    background-image: url(../Imagens/Steve-Jobs.png);
+    background-position: right;
     background-attachment: fixed;
     background-size: cover;
 }
