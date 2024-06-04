@@ -4,8 +4,8 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+
 table{
-    border-collapse: collapse;
     box-shadow: 2px 3px 3px 2px black;
 }
 
@@ -24,8 +24,8 @@ th {
 
 th,td{
     border: 1px solid black;
-    width: 60px;
-    height: 110px;
+    width: 30px;
+    height: 55px;
 }
 
 td {
@@ -33,7 +33,8 @@ td {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.664);
     color: rgb(255, 255, 255);
-}
+    border-radius: 4px;
+]}
 
 .laranja {
     background-color: orangered;
