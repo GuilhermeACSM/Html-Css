@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: "Panton";
+    src: url('../fontes/panton.black-caps.otf') format(opentype);
+}
+@font-face {
+    font-family: "Pattern";
+    src: url(../fontes/PatternBlank-Light.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --rose: #FCECEA;
+    --vermelho: #E03C31;
+    --laranja: #FF6A13;
+    --preto: #1E1C1D;
+
+    --fontes-panton: "Panton", sans-serif;
+    --fontes-pattern: "Pattern", sans-serif;
+}
+
+/*----------------------Home---------------------------*/
+
+a:visited {
+    color: var(--rose);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--preto);
+    text-align: center;
+    padding: 25px;
+}
+
+header > img {
+    width: 100px;
+    border-radius: 15px;
+    float: left;
+}
+
+header > h1 {
+    font-size: 3em;
+    font-family: var(--fontes-panton);
+    text-align: center;
+    color: var(--rose);
+}
+
+header > p {
+    font-family: var(--fontes-pattern);
+    text-align: center;
+    color: var(--rose);
+}
+
+nav {
+    text-align: center;
+    word-spacing: 30px;
+    display: inline-block;
+    font-family: var(--fontes-pattern);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+nav a:hover{
+    color: var(--laranja);
+    font-weight: bolder;
+}
+
+main {
+    width: 100%;
+    height: 1000px;
+    background-image: url(../imagens/futebol-bg.jpg);
+    background-color: black;
+    margin-bottom: -10px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main > img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--preto);
+    color: var(--rose);
+    width: 100%;
+    height: 50px;
+
+}
+
+footer > p {
+    padding: 10px;
+}
