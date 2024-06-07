@@ -210,12 +210,11 @@ body {
 
 
 .main-horario {
-    background-image: url(img/campo-futebol-aereo.jpg);
-    background-repeat: no-repeat;
     max-width: 800px;
     min-width: 320px;
     margin: auto;
     height: 900px;
+    background-color: var(--preto);
 }
 
 .container-table {
@@ -225,7 +224,7 @@ body {
 }
 
 caption {
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-variant: small-caps;
     padding: 10px;
@@ -291,7 +290,7 @@ tbody>tr:nth-child(odd) {
 
 /*-----------------Pré-Matrícula-------------*/
 .container-body {
-    background-color: var(--rose);
+    background-color: var(--preto);
 }
 
 #main-3 {
