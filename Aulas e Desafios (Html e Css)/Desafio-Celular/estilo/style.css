@@ -1,42 +1,61 @@
 @charset "UTF-8";
 
-
-body {
-    position: relative;
-    background-image: url(../imagens/fundo-madeira.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    position:absolute;
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../imagens/frame-iphone.png);
-    background-size:cover ;
-    height: 640px;
-    width: 317px;
-}
-
-section{
-    background-image: url(../imagens/tela-home.jpg);
-    background-size: cover;
-    width: 273px;
-    height: 481px;
-    margin-top: 81px;
-    margin-left: 22px;
-}
-
-img {
-    border-radius: 100%;
-    width: 50px;
-}
-
-nav {
-    display: block;
-    text-align: right;
-    word-spacing: 10px;
     
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+/*(box-sizing: border-box;) Serve para deixar a borda dos icones e links ajustada.*/
+
+
+section#redes-sociais img {
+    width: 50px;
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px hwb(0 0% 100% / 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.603);
 }
