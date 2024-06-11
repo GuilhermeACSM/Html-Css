@@ -6,6 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 html, body {
     height: 100vh;
     width: 100vw;
@@ -22,12 +24,12 @@ main {
     position: relative;
 }
 
-section#telefone {
+section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     height: 627px;
     width: 311px;
     background: url(../imagens/frame-iphone.png) no-repeat;
@@ -41,14 +43,12 @@ iframe#tela {
     height: 471px;
 }
 
-section#redes-sociais {
+nav#redes-sociais {
     text-align: right;
 }
 
 /*(box-sizing: border-box;) Serve para deixar a borda dos icones e links ajustada.*/
-
-
-section#redes-sociais img {
+nav#redes-sociais img {
     width: 50px;
     border-radius: 100%;
     margin: 10px;
@@ -56,6 +56,41 @@ section#redes-sociais img {
     box-sizing: border-box;
 }
 
-section#redes-sociais img:hover{
+nav#redes-sociais img:hover{
     border: 2px solid rgba(255, 255, 255, 0.603);
 }
+
+
+/*-------------home------------------*/
+.home {
+    width: 100vw;
+    height: 100vh;
+    background: black url(../imagens/tela-home.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+
+/*-----------------Redes Sociais----------------------*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.redes > img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -10px;
+}
+
+.redes a {
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+
