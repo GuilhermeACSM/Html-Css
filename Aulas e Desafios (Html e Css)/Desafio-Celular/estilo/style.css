@@ -47,7 +47,7 @@ nav#redes-sociais {
     text-align: right;
 }
 
-/*(box-sizing: border-box;) Serve para deixar a borda dos icones e links ajustada.*/
+/*(box-sizing: border-box;) Serve para deixar a borda dos icones e links ajustada e não estourar na hora de clicar.*/
 nav#redes-sociais img {
     width: 50px;
     border-radius: 100%;
