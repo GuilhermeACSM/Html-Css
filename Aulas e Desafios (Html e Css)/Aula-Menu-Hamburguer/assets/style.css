@@ -11,6 +11,7 @@ header {
     background: rgba(255, 0, 0, 0.671);
     text-align: center;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 a {
@@ -23,19 +24,19 @@ a {
 
 li:hover {
     color: black;
-    background: rgba(255, 255, 255, 0.76);
+    background: rgba(77, 31, 31, 0.356);
 }
 
 a:visited {
-    color: white;
+    background: rgba(77, 31, 31, 0.356);
 }
 
-ul {
+menu ul {
     list-style-type: none;
     margin-top: 10px;
 }
 
-li {
+menu li {
     background: black;
     margin: 5px;
     padding: 10px;
@@ -50,12 +51,25 @@ main {
     padding: 10px;
     background: rgba(255, 255, 255, 0.658);
     width: 500px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.527);
 }
 
-main p {
+article h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+article p {
     text-align: justify;
     text-indent: 10%;
+    margin-top: 10px;
+}
+
+footer {
+    background: rgba(255, 0, 0, 0.671);
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    font-weight: bolder;
 }
