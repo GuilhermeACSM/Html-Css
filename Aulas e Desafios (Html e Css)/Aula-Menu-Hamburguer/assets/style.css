@@ -15,6 +15,7 @@ header {
 }
 
 a {
+    display: block;
     color: white;
     text-decoration: none;
     margin: 10px;
@@ -22,7 +23,7 @@ a {
     box-sizing: border-box;
 }
 
-li:hover {
+#itens li:hover {
     color: black;
     background: rgba(77, 31, 31, 0.356);
 }
@@ -31,15 +32,47 @@ a:visited {
     background: rgba(77, 31, 31, 0.356);
 }
 
-menu ul {
+#itens ul {
     list-style-type: none;
     margin-top: 10px;
 }
 
-menu li {
+#itens li {
     background: black;
     margin: 5px;
+    padding: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+
+span#burguer {
     padding: 10px;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    span#burguer {
+        display: none;
+}
+
+    menu {
+        display: block;
+}
+
+    menu > ul > li {
+        display: inline-block;
+        width: 130px;
+}
+
+
 }
 
 body {
@@ -47,12 +80,14 @@ body {
 }
 
 main {
+    width: 90%;
+    display: block;
     margin: auto;
     padding: 10px;
     background: rgba(255, 255, 255, 0.658);
-    width: 500px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.527);
+    
 }
 
 article h2 {
