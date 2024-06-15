@@ -1,22 +1,158 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-
-
-:root {
-    --white: white;
-    --preto: rgba(0, 0, 0, 0.664);
-
-
-
-    --font-padrao: 'Spicy Rice', sans-serif;
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-* {
-    padding: 0px;
-    margin: 0px;
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
 
-    font-family: Arial, Helvetica, sans-serif;
+header {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+    background-color: rgb(0, 0, 0);
+}
+
+.div-logo {
+    color: orangered;
+    position: absolute;
+}
+
+.menu-ul {
+    float: right;
+    list-style-type: none;
+    width: 30%;
+}
+
+.menu-li {
+    margin-right: 10px;
+}
+
+.menu-li:hover {
+    background-color: white;
+}
+
+#menu-hamburguer {
+    color: orangered;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+/*FALAR COM O PROFESOR DO MENU APARECER DO NADA NA RESOLUÇÃO 830PX*/
+
+@media  screen and (max-width: 830px) {
+    .menu-ul {
+        background-color: black;
+}
+    menu {
+        display: none;
+}
+}
+
+
+@media screen and (min-width: 830px) {
+    header {
+        padding: 50px 0;
+    }
+
+    #menu-hamburguer {
+        display: none;
+    }
+
+    menu {
+        display: inline-block;
+    }
+
+    .div-logo > h1 {
+        font-size: 2.4em;
+    }
+
+    .menu-ul {
+        width: 100%;
+    }
+
+    .menu-ul > li > a {
+        font-size: 1.2em;
+    }
+
+    .menu-li {
+        display: inline-block;
+        font-size: 0.9em;
+        list-style-type: none;
+        padding: 0 20px;
+    }
+}
+
+/*-------------Main-----------------*/
+
+
+.parallax-warcraft{
+    background-image: url(../img/warcraft.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.parallax-text {
+    width: 300px;
+    height: 380px;
+    text-align: justify;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 10px;
+    font-family: var(--fontes-pattern);
+    font-size: 0.8em;
+}
+
+.parallax-text > h2 {
+    text-transform: uppercase;
+    font-family: var(--fontes-panton);
+    margin-bottom: 10px;
+}
+
+.p-disp {
+    color: rgba(255, 255, 255, 0.548);
+}
+
+#compra-botao {
+    position: absolute;
+    margin-top: 20px;
+    padding: 6px;
+    width: 24%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#article-films {
+    background-color: black;
+}
+
+.text-films {
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.link-todos {
+    text-align: center;
+    display: block;
+    color: rgb(255, 68, 0);
 }
 
