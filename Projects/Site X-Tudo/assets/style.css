@@ -6,7 +6,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -44,27 +43,17 @@ header {
     cursor: pointer;
 }
 
-a {
+header a {
     display: block;
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+header a:hover {
     color: orangered;
 }
 
 /*FALAR COM O PROFESOR DO MENU APARECER DO NADA NA RESOLUÇÃO 830PX*/
-
-@media  screen and (max-width: 830px) {
-    .menu-ul {
-        background-color: black;
-}
-    menu {
-        display: none;
-}
-}
-
 
 @media screen and (min-width: 830px) {
     header {
@@ -99,9 +88,23 @@ a:hover {
     }
 }
 
+
+@media  screen and (max-width: 830px) {
+    .menu-ul {
+        background-color: black;
+}
+    menu {
+        display: none;
+}
+
+
+
+
+}
+
 /*-------------Main-----------------*/
 
-
+/*Article 1*/
 .parallax-warcraft{
     background-image: url(../img/warcraft.jpg);
     background-size: cover;
@@ -131,28 +134,53 @@ a:hover {
     color: rgba(255, 255, 255, 0.548);
 }
 
-#compra-botao {
-    position: absolute;
-    margin-top: 20px;
-    padding: 6px;
-    width: 24%;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-}
-
-#article-films {
-    background-color: black;
-}
-
-.text-films {
-    text-align: center;
+#compra-botao a {
+    text-decoration: none;
     display: block;
     color: white;
 }
 
-.link-todos {
+#compra-botao a:hover {
+    color: orangered;
+}
+
+#compra-botao {
+    position: absolute;
+    margin-top: 20px;
+    padding: 6px;
+    width: 280px;
     text-align: center;
-    display: block;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/*Article 2*/
+/*MEXER NO ALINHAMENTO PARA QUANDO EXPANDIR O SITE PARA PC FICAR AJUSTADO PEGUNTAR PRO PROFESSOR*/
+#article-films {
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+.text-films {
+    color: white;
+}
+
+.link-todos {
     color: rgb(255, 68, 0);
 }
 
+
+footer {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+footer p {
+    display: inline-block;
+    color:white;
+    text-align: center;
+}
+
+.imagem-footer {
+    display: inline-block;
+    width: 30px;
+}
