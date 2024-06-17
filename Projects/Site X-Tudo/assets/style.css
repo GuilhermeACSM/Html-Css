@@ -175,17 +175,20 @@ header a:hover {
 }
 
 
-footer {
-    display: block;
-}
-
-
 
 /*Article 3*/
 
 
 
 
+
+
+
+
+/*Footer*/
+footer {
+    display: block;
+}
 
 footer p {
     display: inline-block;
