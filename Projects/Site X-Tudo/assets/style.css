@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -55,7 +59,7 @@ header a:hover {
 
 /*FALAR COM O PROFESOR DO MENU APARECER DO NADA NA RESOLUÇÃO 830PX*/
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 831px) {
     header {
         padding: 50px 0;
     }
@@ -91,7 +95,7 @@ header a:hover {
 
 @media  screen and (max-width: 830px) {
     .menu-ul {
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.884);
 }
     menu {
         display: none;
@@ -157,22 +161,31 @@ header a:hover {
 /*Article 2*/
 /*MEXER NO ALINHAMENTO PARA QUANDO EXPANDIR O SITE PARA PC FICAR AJUSTADO PEGUNTAR PRO PROFESSOR*/
 #article-films {
-    background-color: rgba(0, 0, 0, 0.849);
 }
 
 .text-films {
+    font-size: 1.3em;
+    margin-top: 10px;
     color: white;
 }
 
 .link-todos {
+    font-size: 1.3em;
     color: rgb(255, 68, 0);
 }
 
 
 footer {
     display: block;
-    background-color: rgba(0, 0, 0, 0.849);
 }
+
+
+
+/*Article 3*/
+
+
+
+
 
 footer p {
     display: inline-block;
