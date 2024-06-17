@@ -6,8 +6,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+
 body {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: #0F0F0F;
+}
+
+main {
+    margin: auto;
 }
 
 ::-webkit-scrollbar {
@@ -19,7 +26,7 @@ header {
     display: block;
     padding: 10px 0;
     text-align: right;
-    background-color: rgb(0, 0, 0);
+    background-color: #0F0F0F;
 }
 
 .div-logo {
@@ -56,6 +63,8 @@ header a {
 header a:hover {
     color: orangered;
 }
+
+
 
 /*FALAR COM O PROFESOR DO MENU APARECER DO NADA NA RESOLUÇÃO 830PX*/
 
@@ -95,7 +104,7 @@ header a:hover {
 
 @media  screen and (max-width: 830px) {
     .menu-ul {
-        background-color: rgba(0, 0, 0, 0.884);
+        background-color: #0F0F0F;
 }
     menu {
         display: none;
@@ -122,7 +131,7 @@ header a:hover {
     height: 380px;
     text-align: justify;
     color: white;
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: #0f0f0fb6;
     padding: 10px;
     font-family: var(--fontes-pattern);
     font-size: 0.8em;
@@ -154,49 +163,119 @@ header a:hover {
     padding: 6px;
     width: 280px;
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: #0f0f0f;
 }
 
 
 /*Article 2*/
-/*MEXER NO ALINHAMENTO PARA QUANDO EXPANDIR O SITE PARA PC FICAR AJUSTADO PEGUNTAR PRO PROFESSOR*/
-#article-films {
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
-.text-films {
-    font-size: 1.3em;
-    margin-top: 10px;
+.container-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+
+.text-itensL {
     color: white;
+    font-size: 1.3em;
 }
 
-.link-todos {
+.text-itensA  a{
+    padding: 8px;
+    text-decoration: none;
     font-size: 1.3em;
-    color: rgb(255, 68, 0);
+    color: orangered;
 }
 
 
 
 /*Article 3*/
-
-
-
-
-
-
-
-
-/*Footer*/
-footer {
-    display: block;
+.title-iforma {
+    text-align: center;
+    color: white;
+    padding: 15px;
 }
 
-footer p {
-    display: inline-block;
-    color:white;
+.text-informa {
+    color: rgba(255, 255, 255, 0.788);
     text-align: center;
 }
 
-.imagem-footer {
-    display: inline-block;
+.link-informa a{
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    padding: 15px;
+}
+
+/*iframe*/
+.div-iframe {
+    background-color: black;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+.div-iframe > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+
+/*Footer*/
+.text-footer {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.container-input {
+    display: flex;
+    justify-content: center;
+}
+
+.input-footer {
+    margin: auto;
+    width: 50%;
+    height: 30px;
+    border: solid 2px #0f0f0f;
+    background-color: white;
+}
+
+
+.link-enviar { 
+    padding: 3px;
+    text-align: center;
+
+}
+
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.container-social {
+    display: flex;
+    justify-content: center;
+}
+
+.itens-social img{
+    padding: 10px;
     width: 30px;
+    border-radius: 100%;
 }

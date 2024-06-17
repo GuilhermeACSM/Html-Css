@@ -16,15 +16,13 @@
                 <h1>5th Films&Cia</h1>
             </a>
         </div>
-        <span class="material-symbols-outlined" id="menu-hamburguer" onclick="clickMenu()">
-            density_small
-            </span>
+        <span class="material-symbols-outlined" id="menu-hamburguer" onclick="clickMenu()">density_small</span>
         <menu id="itens">
             <ul class="menu-ul">
                 <li class="menu-li"><a class="link-header" href="index.html">Home</a></li>
-                <li class="menu-li"><a class="link-header" href="#">Em breve</a></li>
                 <li class="menu-li"><a class="link-header" href="#">Catálogo</a></li>
                 <li class="menu-li"><a class="link-header" href="#">Comprar</a></li>
+                <li class="menu-li"><a class="link-header" href="#">Sobre Nós</a></li>
                 <li class="menu-li"><a class="link-header" href="#">Contato</a></li>
             </ul>
         </menu>
@@ -41,24 +39,70 @@
             </article>
         </section>
         <section>
-                <article id="article-films">
-                    <p class="text-films">Lançamentos</p>
-                    <p><a class="link-todos" href="#">Assistir todos</a></p>
-                    <a href="#"><img class="image-films" src="img/Avengers_Endgame_poster.jpg" alt="Vingadores Endgame"></a>
-                    <a href="#"><img class="image-films" src="img/Inception_(2010)_theatrical_poster.jpg" alt="Inception"></a>
-                    <a href="#"><img class="image-films" src="img/Interstellar_film_poster.jpg" alt="Interstellar"></a>
-                    <a href="#"><img class="image-films" src="img/Back_to_black_filme_poster.jpeg" alt="Back to black filme"></a>
-                </article>
+            <div class="container-text">
+                <div class="text-itensL">
+                    <p>Lançamentos |</p>
+                    
+                </div>
+                <div class="text-itensA">
+                    <a href="#">Assistir todos</a> 
+                </div>
+            </div>
+            <article>
+                    <div class="container">
+                        <div>
+                            <a href="#"><img src="img/Avengers_Endgame_poster.jpg" alt="Vingadores Endgame"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="img/Inception_(2010)_theatrical_poster.jpg" alt="Inception"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="img/Interstellar_film_poster.jpg" alt="Interstellar"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="img/Back_to_black_filme_poster.jpeg" alt="Back to black filme"></a>
+                        </div>
+                    </div>
+            </article>
         </section>
         <section >
-            <h2 class="title-iforma">Sobre a 5th Films&Cia</h2>
-            <p class="text-informa">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt similique at assumenda voluptate autem, vel inventore illum sed maiores consequuntur, nesciunt repellat ratione perferendis, placeat minima magni molestiae eum? Nisi.</p>
-            <p><a class="link-informa" href="#">+ Mais Informações</a></p>
+            <article>
+                <h2 class="title-iforma">Sobre a 5th Films&Cia</h2>
+                <p class="text-informa">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt similique at assumenda voluptate autem, vel inventore illum sed maiores consequuntur, nesciunt repellat ratione perferendis, placeat minima magni molestiae eum? Nisi.</p>
+            </article>
+            <div class="link-informa">
+                <a href="#">+ Mais Informações</a>
+            </div>
+        </section>
+        <section>
+            <div class="div-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cZ5EW0VlopA?si=aMso9-5S0JVo3Fdb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Site criado por Guilherme Augusto.</p>
-        <a href="https://www.instagram.com/acsmguilherme/" target="_blank"><img src="img/instagram.png" alt="Instagram"  class="imagem-footer"></a>
+        <h3 class="text-footer">Assista Primeiro</h3>
+        <div class="container-input">
+            <input class="input-footer" type="email" placeholder="Endereçe de email">
+        </div>
+        <div class="link-enviar">
+            <input type="submit" value="Enviar">
+        </div>
+        <div class="container-social">
+            <div class="itens-social">
+                <a href="https://www.instagram.com/acsmguilherme/" target="_blank"><img src="img/logo-instagram.jpg" alt="Instagram"  class="imagem-footer"></a>
+            </div>
+            <div class="itens-social">
+                <a href="#" target="_blank"><img src="img/logo-github.jpg" alt="GitHub"  class="imagem-footer"></a>
+            </div>
+            <div class="itens-social">
+                <a href="#" target="_blank"><img src="img/logo-facebook.jpg" alt="Facebook"  class="imagem-footer"></a>
+            </div>
+            <div class="itens-social">
+                <a href="#" target="_blank"><img src="img/linkedin-logo (1).png" alt="Linkedin"  class="imagem-footer"></a>
+            </div>
+        </div>
+        <p>Site desenvolvido por Guilherme Augusto.</p>
     </footer>
 </body>
 </html>
