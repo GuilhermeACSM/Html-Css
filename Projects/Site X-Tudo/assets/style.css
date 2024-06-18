@@ -6,15 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 body {
     background-color: #0F0F0F;
-}
-
-main {
-    margin: auto;
 }
 
 ::-webkit-scrollbar {
@@ -22,6 +15,7 @@ main {
     height: 0px;
 }
 
+/*Header*/
 header {
     display: block;
     padding: 10px 0;
@@ -66,9 +60,9 @@ header a:hover {
 
 
 
-/*FALAR COM O PROFESOR DO MENU APARECER DO NADA NA RESOLUÇÃO 830PX*/
 
-@media screen and (min-width: 831px) {
+/*------------------Telas Grandes--------------------------*/
+@media screen and (min-width: 800px) {
     header {
         padding: 50px 0;
     }
@@ -99,10 +93,20 @@ header a:hover {
         list-style-type: none;
         padding: 0 20px;
     }
+
+
+    /*Footer tela grande*/
+    footer .input-footer {
+        width: 300px;
+    }
+
+    footer .button-footer {
+        width: 300px;
+    }
 }
 
-
-@media  screen and (max-width: 830px) {
+/*------------------Telas Pequenas--------------------------*/
+@media  screen and (max-width: 799px) {
     .menu-ul {
         background-color: #0F0F0F;
 }
@@ -111,13 +115,18 @@ header a:hover {
 }
 
 
+}
 
+
+
+
+/*Main*/
+main {
+    margin: auto;
 
 }
 
-/*-------------Main-----------------*/
-
-/*Article 1*/
+/*---------Article 1--------------*/
 .parallax-warcraft{
     background-image: url(../img/warcraft.jpg);
     background-size: cover;
@@ -167,7 +176,7 @@ header a:hover {
 }
 
 
-/*Article 2*/
+/*----------------Article 2---------*/
 .container {
     display: flex;
     flex-direction: row;
@@ -198,7 +207,7 @@ header a:hover {
 
 
 
-/*Article 3*/
+/*--------------Article 3------------*/
 .title-iforma {
     text-align: center;
     color: white;
@@ -217,7 +226,8 @@ header a:hover {
     padding: 15px;
 }
 
-/*iframe*/
+
+/*-------------iframe-------------*/
 .div-iframe {
     background-color: black;
     margin: 0px -20px 30px -20px;
@@ -235,6 +245,52 @@ header a:hover {
 
 }
 
+/*---------------IFRAMES COMPRA------------------------*/
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav > a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.section-frame01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.article-basic {
+    background-color: rgba(255, 255, 255, 0.027);
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.lista-frame01 {
+    list-style-type: none;
+}
+
+
+.article-basic:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+
+
+
+
 
 /*Footer*/
 .text-footer {
@@ -250,21 +306,31 @@ header a:hover {
 
 .input-footer {
     margin: auto;
-    width: 50%;
+    width: 40%;
     height: 30px;
     border: solid 2px #0f0f0f;
     background-color: white;
 }
 
 
-.link-enviar { 
-    padding: 3px;
+.button-enviar { 
+    padding: 5px;
     text-align: center;
+}
 
+.button-footer {
+    cursor: pointer;
+    color: white;
+    background-color: #0f0f0f;
+    border: solid 2px white;
+    height: 30px;
+    width: 40%;
 }
 
 
 footer p {
+    padding: 4px;
+    background-color: black;
     text-align: center;
     color: white;
 }
