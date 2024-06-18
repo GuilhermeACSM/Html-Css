@@ -227,7 +227,7 @@ main {
 }
 
 
-/*-------------iframe-------------*/
+/*-------------iframe principal Home-------------*/
 .div-iframe {
     background-color: black;
     margin: 0px -20px 30px -20px;
@@ -245,24 +245,46 @@ main {
 
 }
 
+
+/*!!!!!PERGUNTAR PARA O PROFESOR SOBRE DEIXAR O IFRAME SEMPRE APARECENDO NA TELE MESMO SE REINICIAR A PÁGINA!!!!!*/
 /*---------------IFRAMES COMPRA------------------------*/
 iframe {
     width: 100%;
     height: 400px;
 }
 
+/*Nav do iframe da pág Compra*/
+.article-compra {
+    color: white;
+    text-align: center;
+}
+
+
+.title1-compra {
+    font-size: 2em;
+}
+
+
+
 nav {
+    margin-top: 10px;
+    background-color: orangered;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
 }
 
 nav > a {
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0F0F0F;
     text-decoration: none;
     margin: 10px;
 }
 
-.section-frame01 {
+/*Iframes compra css*/
+.section-frame {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -278,17 +300,33 @@ nav > a {
     margin: 10px;
 }
 
-.lista-frame01 {
-    list-style-type: none;
+.div-textCompra {
+    display: block;
+    text-align: center;
 }
 
+.titlecard-frame01 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.title-cardpreço {
+    color: orangered;
+}
+
+.div-preço {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.lista-frame {
+    list-style-position: inside;
+}
 
 .article-basic:hover {
     background-color: rgba(255, 255, 255, 0.137);
 }
-
-
-
 
 
 
@@ -344,4 +382,142 @@ footer p {
     padding: 10px;
     width: 30px;
     border-radius: 100%;
+}
+
+
+
+
+
+
+
+/*------------------Telas Grandes--------------------------*/
+@media screen  and (min-width: 1201px) and (max-width: 8000px)  {
+    header {
+        padding: 40px 0;
+    }
+
+    #menu-hamburguer {
+        display: none;
+    }
+
+    menu {
+        display: inline-block;
+    }
+
+    .div-logo > h1 {
+        font-size: 2.4em;
+    }
+
+    .menu-ul {
+        width: 100%;
+    }
+
+    .menu-ul > li > a {
+        font-size: 1.2em;
+    }
+
+    .menu-li {
+        display: inline-block;
+        font-size: 0.9em;
+        list-style-type: none;
+        padding: 0 20px;
+    }
+
+    .section-frame {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .iframegeral {
+        margin-top: 100px;
+        height: 500px;
+}
+
+
+}
+
+
+
+/*------------------Tablet e Desktop--------------------------*/
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    header {
+        padding: 40px 0;
+    }
+
+    #menu-hamburguer {
+        display: none;
+    }
+
+    menu {
+        display: inline-block;
+    }
+
+    .div-logo > h1 {
+        font-size: 2.4em;
+    }
+
+    .menu-ul {
+        width: 100%;
+    }
+
+    .menu-ul > li > a {
+        font-size: 1.2em;
+    }
+
+    .menu-li {
+        display: inline-block;
+        font-size: 0.9em;
+        list-style-type: none;
+        padding: 0 20px;
+    }
+
+
+    .section-frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .iframegeral {
+        height: 650px;
+}
+
+
+    /*Footer tela grande*/
+    footer .input-footer {
+        width: 300px;
+    }
+
+    footer .button-footer {
+        width: 300px;
+    }
+}
+
+
+
+/*------------------Telas Pequenas--------------------------*/
+@media  screen and (max-width: 799px) {
+    .menu-ul {
+        background-color: #0F0F0F;
+}
+    menu {
+        display: none;
+}
+
+    .article-compra {
+        margin-top: 50px;
+}
+
+    /*IFRAME PAG COMPRA*/
+    .iframegeral {
+        height: 700px;
+}   
+
+
+
+
 }
