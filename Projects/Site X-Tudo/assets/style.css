@@ -38,10 +38,6 @@ header {
     margin-right: 10px;
 }
 
-.menu-li:hover {
-    background-color: white;
-}
-
 #menu-hamburguer {
     color: orangered;
     margin-right: 10px;
@@ -58,69 +54,7 @@ header a:hover {
     color: orangered;
 }
 
-
-
-
-/*------------------Telas Grandes--------------------------*/
-@media screen and (min-width: 800px) {
-    header {
-        padding: 50px 0;
-    }
-
-    #menu-hamburguer {
-        display: none;
-    }
-
-    menu {
-        display: inline-block;
-    }
-
-    .div-logo > h1 {
-        font-size: 2.4em;
-    }
-
-    .menu-ul {
-        width: 100%;
-    }
-
-    .menu-ul > li > a {
-        font-size: 1.2em;
-    }
-
-    .menu-li {
-        display: inline-block;
-        font-size: 0.9em;
-        list-style-type: none;
-        padding: 0 20px;
-    }
-
-
-    /*Footer tela grande*/
-    footer .input-footer {
-        width: 300px;
-    }
-
-    footer .button-footer {
-        width: 300px;
-    }
-}
-
-/*------------------Telas Pequenas--------------------------*/
-@media  screen and (max-width: 799px) {
-    .menu-ul {
-        background-color: #0F0F0F;
-}
-    menu {
-        display: none;
-}
-
-
-}
-
-
-
-
-/*Main*/
+/*-Main-*/
 main {
     margin: auto;
 
@@ -250,7 +184,7 @@ main {
 /*---------------IFRAMES COMPRA------------------------*/
 iframe {
     width: 100%;
-    height: 400px;
+    height:500px;
 }
 
 /*Nav do iframe da pág Compra*/
@@ -292,7 +226,7 @@ nav > a {
 }
 
 .article-basic {
-    background-color: rgba(255, 255, 255, 0.027);
+    background-color: rgba(255, 255, 255, 0.11);
     border-radius: 5px;
     color: white;
     align-items: center;
@@ -429,6 +363,14 @@ footer p {
         align-items: center;
     }
 
+    #parg-compra {
+        padding: 3px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 500px;
+    }
+
 
     .iframegeral {
         margin-top: 100px;
@@ -481,13 +423,24 @@ footer p {
         margin: auto;
     }
 
+    #parg-compra {
+        padding: 3px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 500px;
+    }
 
     .iframegeral {
-        height: 650px;
+        margin-top: 30px;
+        height: 700px;
 }
 
+    .main-iframe {
+        height: auto;
+    }
 
-    /*Footer tela grande*/
+/*--Footer tela grande--*/
     footer .input-footer {
         width: 300px;
     }
@@ -509,15 +462,21 @@ footer p {
 }
 
     .article-compra {
-        margin-top: 50px;
+        margin-top: 100px;
 }
 
     /*IFRAME PAG COMPRA*/
     .iframegeral {
-        height: 700px;
+        height: 730px;
 }   
 
-
+#parg-compra {
+    padding: 3px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+}
 
 
 }
