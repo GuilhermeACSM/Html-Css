@@ -480,3 +480,84 @@ footer p {
 
 
 }
+
+
+
+/* --------- CATALOGO ---------- */
+.galeria-catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+/* card de fotografia */
+.galeria-catalogo > article {
+    padding: 10px;
+    background-color: white;
+    width: 200px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.493), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+}
+
+/* Foto do Lançamento */
+.galeria-catalogo > article > img {
+    width: 200px;
+    opacity: 1;
+    transition-duration: 0.5s;
+    margin-bottom: -4px;
+}
+
+.galeria-catalogo > article > img:hover {
+    opacity: 0.5;
+}
+
+.galeria-catalogo > article:hover {
+    background-color: black;
+}
+
+
+.body-cat {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-cat {
+    text-align: left;
+    padding: 20px;
+    border-left: 2px solid #ffffff;
+}
+
+.container-cat h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.container-cat p {
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+.container-cat button {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.container-cat button:hover {
+    background-color: #e65c00;
+}
+
+
+
