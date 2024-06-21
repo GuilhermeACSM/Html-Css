@@ -15,51 +15,140 @@ body {
     height: 0px;
 }
 
-/*Header*/
+
+/*-------------------------------------------------------- GERAL --------------------------------------------------*/
+/*------------------ HEADER -----------------------------*/
 header {
-    display: block;
-    padding: 10px 0;
-    text-align: right;
-    background-color: #0F0F0F;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo hamburguer"
+                        "null ul";
+                        row-gap: 10px;
+    height: 60px;
+    padding: 10px 0 10px 20px;
 }
 
 .div-logo {
+    font-size: 1.3em;
+    grid-area: logo;
+    align-self: center;
+}
+
+.div-logo > a {
+    text-decoration: none;
     color: orangered;
-    position: absolute;
+    font-size: 0.7em;
+    width: fit-content;
+}
+
+.div-logo >a:hover {
+    color: rgba(255, 68, 0, 0.623);
+}
+
+menu {
+    display: none;
+    grid-area: ul;
+    justify-self: end;
 }
 
 .menu-ul {
-    float: right;
+    grid-area: ul;
     list-style-type: none;
-    width: 30%;
+    text-align: right;
+    padding-right: 10px;
 }
 
 .menu-li {
     margin-right: 10px;
 }
 
-#menu-hamburguer {
-    color: orangered;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-header a {
-    display: block;
-    color: white;
+.menu-li > a {
     text-decoration: none;
+    font-family: var(--fontLight);
+    color: white;
 }
 
-header a:hover {
+.menu-li > a:hover {
     color: orangered;
 }
 
-/*-Main-*/
+#menu-hamburguer {
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    padding-right: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+/*------------------------ MAIN -------------------------------*/
 main {
     margin: auto;
 
 }
 
+/*------------------------- FOOTER ----------------------------*/
+.text-footer {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.container-input {
+    display: flex;
+    justify-content: center;
+}
+
+.input-footer {
+    margin: auto;
+    width: 40%;
+    height: 30px;
+    border: solid 2px #0f0f0f;
+    background-color: white;
+}
+
+
+.button-enviar { 
+    padding: 5px;
+    text-align: center;
+}
+
+.button-footer {
+    cursor: pointer;
+    color: white;
+    background-color: #0f0f0f;
+    border: solid 2px white;
+    height: 30px;
+    width: 40%;
+}
+
+
+footer p {
+    padding: 4px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.container-social {
+    display: flex;
+    justify-content: center;
+}
+
+.itens-social img{
+    padding: 10px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+
+
+
+/*-------------------------------------------------------- SOMENTE PAG HOME --------------------------------------------------*/
 /*---------Article 1--------------*/
 .parallax-warcraft{
     background-image: url(../img/warcraft.jpg);
@@ -110,7 +199,7 @@ main {
 }
 
 
-/*----------------Article 2---------*/
+/*----------------Article 2---------------*/
 .container {
     display: flex;
     flex-direction: row;
@@ -126,6 +215,9 @@ main {
     padding: 10px;
 }
 
+.home-image:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.493), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+}
 
 .text-itensL {
     color: white;
@@ -179,8 +271,7 @@ main {
 
 }
 
-
-/*!!!!!PERGUNTAR PARA O PROFESOR SOBRE DEIXAR O IFRAME SEMPRE APARECENDO NA TELE MESMO SE REINICIAR A PÁGINA!!!!!*/
+/*-------------------------------------------------- SOMENTE PAG COMPRA -------------------------------------------------------*/
 /*---------------IFRAMES COMPRA------------------------*/
 iframe {
     width: 100%;
@@ -193,12 +284,9 @@ iframe {
     text-align: center;
 }
 
-
 .title1-compra {
     font-size: 2em;
 }
-
-
 
 nav {
     margin-top: 10px;
@@ -264,82 +352,111 @@ nav > a {
 
 
 
-/*Footer*/
-.text-footer {
-    text-align: center;
-    color: white;
-    font-size: 2em;
-}
-
-.container-input {
+/* --------- CATALOGO ---------- */
+.galeria-catalogo {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.input-footer {
-    margin: auto;
-    width: 40%;
-    height: 30px;
-    border: solid 2px #0f0f0f;
-    background-color: white;
+    margin-bottom: 30px;
 }
 
 
-.button-enviar { 
-    padding: 5px;
-    text-align: center;
-}
-
-.button-footer {
-    cursor: pointer;
-    color: white;
-    background-color: #0f0f0f;
-    border: solid 2px white;
-    height: 30px;
-    width: 40%;
-}
-
-
-footer p {
-    padding: 4px;
-    background-color: black;
-    text-align: center;
-    color: white;
-}
-
-.container-social {
-    display: flex;
-    justify-content: center;
-}
-
-.itens-social img{
+/* card de fotografia */
+.galeria-catalogo > article {
     padding: 10px;
-    width: 30px;
-    border-radius: 100%;
+    background-color: white;
+    width: 200px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.493), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+}
+
+/* Foto do Lançamento */
+.galeria-catalogo > article > img {
+    width: 200px;
+    opacity: 1;
+    transition-duration: 0.5s;
+    margin-bottom: -4px;
+}
+
+.galeria-catalogo > article > img:hover {
+    opacity: 0.5;
+}
+
+.galeria-catalogo > article:hover {
+    background-color: black;
 }
 
 
 
+/*!!!!!!!!!!!FALAR COM O PROFESSOR SOBRE USAR GRID PARA ALINHAR ISSO NO MEIO!!!!!!!!!!!*/
+.section-cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid white;
+    height: 50vh;
+}
+
+.container-cat {
+    padding: 20px;
+    text-align: justify;
+}
+
+.container-cat > .subtitle {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.container-cat > h1 {
+    font-size: 2.5em;
+    color: orangered;
+}
+
+.container-cat > p {
+    margin: 0;
+    color: white;
+}
+
+.container-cat button {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.container-cat button a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-cat button:hover {
+    background-color: #e65c00;
+}
 
 
-
-
+/*-------------------------------------------------------- MEDIA QUERY -------------------------------------------------------*/
 /*------------------Telas Grandes--------------------------*/
 @media screen  and (min-width: 1201px) and (max-width: 8000px)  {
     header {
-        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "logo menu";
+        height: 40px;
     }
-
+    
     #menu-hamburguer {
         display: none;
     }
 
     menu {
         display: inline-block;
-    }
-
-    .div-logo > h1 {
-        font-size: 2.4em;
+        grid-area: menu;
+        width: 600px;
+        align-self: center;
     }
 
     .menu-ul {
@@ -354,8 +471,9 @@ footer p {
         display: inline-block;
         font-size: 0.9em;
         list-style-type: none;
-        padding: 0 20px;
+        padding: 0 5% 0 0;
     }
+
 
     .section-frame {
         display: flex;
@@ -385,19 +503,21 @@ footer p {
 /*------------------Tablet e Desktop--------------------------*/
 @media screen and (min-width: 800px) and (max-width: 1200px){
     header {
-        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "logo menu";
+        height: 40px;
     }
-
+    
     #menu-hamburguer {
         display: none;
     }
 
     menu {
         display: inline-block;
-    }
-
-    .div-logo > h1 {
-        font-size: 2.4em;
+        grid-area: menu;
+        width: 550px;
+        align-self: center;
     }
 
     .menu-ul {
@@ -412,7 +532,7 @@ footer p {
         display: inline-block;
         font-size: 0.9em;
         list-style-type: none;
-        padding: 0 20px;
+        padding: 0 5% 0 0;
     }
 
 
@@ -440,6 +560,7 @@ footer p {
         height: auto;
     }
 
+
 /*--Footer tela grande--*/
     footer .input-footer {
         width: 300px;
@@ -454,15 +575,17 @@ footer p {
 
 /*------------------Telas Pequenas--------------------------*/
 @media  screen and (max-width: 799px) {
+    header {
+        height: 40px;
+    }
+
     .menu-ul {
-        background-color: #0F0F0F;
-}
-    menu {
-        display: none;
-}
+        padding: 5px;
+        background-color: #0f0f0f;
+    }
 
     .article-compra {
-        margin-top: 100px;
+        margin-top: 70px;
 }
 
     /*IFRAME PAG COMPRA*/
@@ -470,14 +593,24 @@ footer p {
         height: 730px;
 }   
 
-#parg-compra {
-    padding: 3px;
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: 500px;
+    #parg-compra {
+        padding: 3px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 500px;
 }
 
+    .section-cat {
+        display: flex;
+        align-items: center;
+        height: 50vh;
+        max-width: 600px;
+    }
+
+    .galeria-catalogo > article {
+        margin: 3px;
+    }
 
 }
 
