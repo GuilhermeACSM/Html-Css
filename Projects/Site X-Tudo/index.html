@@ -6,27 +6,48 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script type="text/javascript" src="Js/scrypt.js"></script>
     <title>5th Films&Cia</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body onresize=mudouTamanho()>
-    <header>
-        <div class="div-logo">
-            <a href="index.html">
-                <h1>5th Films&Cia</h1>
-            </a>
-        </div>
-        <span class="material-symbols-outlined" id="menu-hamburguer" onclick="clickMenu()">density_small</span>
-        <menu id="itens">
-            <ul class="menu-ul">
-                <li class="menu-li"><a class="link-header" href="index.html">Home</a></li>
-                <li class="menu-li"><a class="link-header" href="catalogo.html">Catálogo</a></li>
-                <li class="menu-li"><a class="link-header" href="comprar.html">Comprar</a></li>
-                <li class="menu-li"><a class="link-header" href="#">Sobre Nós</a></li>
-                <li class="menu-li"><a class="link-header" href="#">Contato</a></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
             </ul>
-        </menu>
-    </header>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+        </nav>
     <main>
         <section class="parallax-warcraft">
             <article class="parallax-text">
@@ -35,7 +56,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati beatae quod enim ab porro reprehenderit natus facilis quam ut doloremque cum minus repudiandae praesentium, quo, soluta iure ipsum animi nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod suscipit enim nihil sint perspiciatis quas facere culpa ipsam porro aliquam ipsum id voluptatum ad ducimus tempore, omnis consequuntur! Incidunt, eum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis provident ducimus, quo cum in aliquid ipsa qui beatae quibusdam hic laboriosam architecto, eligendi placeat blanditiis facilis animi, harum nemo repudiandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima cupiditate repudiandae autem sapiente atque in, hic sit reprehenderit aperiam sed harum neque laboriosam quos corporis praesentium dolore beatae. Vel, eligendi?
                 </p>
                 
-                <p id="compra-botao"><a href="#">Compre</a></p>
+                <p id="compra-botao"><a href="comprar.html">Compre</a></p>
             </article>
         </section>
         <section>
@@ -104,5 +125,7 @@
         </div>
         <p>Site desenvolvido por Guilherme Augusto.</p>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

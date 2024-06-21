@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-logo {
+    margin: auto;
+}
+
+.div-logo  a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.div-logo a:hover {
+    /*color: white;*/
+}
+
+
+.menu-ul {
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.menu-li {
+    margin-right: 10px;
+}
+
+.menu-li > a {
+    text-decoration: none;
+    color: orangered;
+}
+
+.menu-li:hover {
+    /*color: white;*/
+}
+
+#menu-hamburguer {
+    display: block;
+    padding-right: 20px;
+    cursor: pointer;
+    color:black;
+}
+
+#itens {
+    display: inline-block;
+}
