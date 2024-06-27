@@ -254,10 +254,15 @@ footer{
     color: orangered;
 }
 
+.text-itensA a:hover {
+    color: white;
+}
+
 
 
 /*--------------Article 3------------*/
 .title-iforma {
+    margin-top: 10px;
     text-align: center;
     color: white;
     padding: 15px;
@@ -273,6 +278,10 @@ footer{
     justify-content: center;
     color: orangered;
     padding: 15px;
+}
+
+.link-informa a:hover {
+    color: white;
 }
 
 
